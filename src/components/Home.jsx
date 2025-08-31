@@ -1,13 +1,8 @@
-import React from "react";
 import { useState } from "react";
 import Popup from "./Popup";
+import { users } from "../Data/Users";
 
 const Home = () => {
-  const users = [
-    { id: 1, name: "Aftab", age: "30" },
-    { id: 2, name: "Ahmed", age: "30" },
-  ];
-
   const [isOpen, setIsOpen] = useState(false);
   const [usser, setUsser] = useState("");
   return (

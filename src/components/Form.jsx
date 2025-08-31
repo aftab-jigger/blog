@@ -15,7 +15,6 @@ const Form = () => {
   }
 
   function handleSubmit(e) {
-    // console.log(e);
     e.preventDefault();
     alert(user.name);
   }
@@ -68,49 +67,3 @@ const Form = () => {
 };
 
 export default Form;
-
-// import { useState } from "react";
-
-// export default function Form() {
-//   const [user, setUser] = useState({
-//     name: "",
-//     age: "",
-//     email: "",
-//   });
-
-//   // Update a single property
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setUser((prev) => ({
-//       ...prev, // keep the other fields unchanged
-//       [name]: value, // update only the changed field
-//     }));
-//   };
-
-//   return (
-//     <div className="p-4">
-//       <input
-//         name="name"
-//         placeholder="Name"
-//         value={user.name}
-//         onChange={handleChange}
-//         className="border p-2 mb-2 block"
-//       />
-//       <input
-//         name="age"
-//         placeholder="Age"
-//         value={user.age}
-//         onChange={handleChange}
-//         className="border p-2 mb-2 block"
-//       />
-//       <input
-//         name="email"
-//         placeholder="Email"
-//         value={user.email}
-//         onChange={handleChange}
-//         className="border p-2 mb-2 block"
-//       />
-//       <p className="mt-2 text-gray-700">{JSON.stringify(user)}</p>
-//     </div>
-//   );
-// }
